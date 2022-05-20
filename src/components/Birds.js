@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import '../index.css'
 import { Link, useParams } from 'react-router-dom'
+// import axios from 'axios'
 
 const Birds = () => {
     const [birds, setBirds] = useState([])

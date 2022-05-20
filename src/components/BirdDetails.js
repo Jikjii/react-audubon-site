@@ -23,6 +23,8 @@ const BirdDetails = ({ id }) => {
         .catch(console.error);
       }, []);
 
+      // add two of the same useState and add a case in case of there being a search bar
+
  
 
 
@@ -33,6 +35,7 @@ const BirdDetails = ({ id }) => {
         <div className="details">
           <h2>{bird.name}</h2>
           <h3>({bird.genus})</h3>
+          
           <h4>Conservation Status</h4>
           <p>{bird.conservationStatus}</p>
           <a href={bird.homepage} target="_blank" rel="noopener" className="read-more">Read More</a>
